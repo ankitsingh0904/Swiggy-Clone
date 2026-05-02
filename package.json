@@ -1,0 +1,36 @@
+{
+  "name": "swiggy-clone",
+  "version": "1.0.0",
+  "description": "Swiggy Clone By Ankit",
+  "keywords": [
+    "Ankit"
+  ],
+  "homepage": "https://github.com/ankitsingh0904/Swiggy-Clone#readme",
+  "bugs": {
+    "url": "https://github.com/ankitsingh0904/Swiggy-Clone/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitsingh0904/Swiggy-Clone.git"
+  },
+  "license": "ISC",
+  "author": "Ankit",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "react": "^19.2.5"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.11.2",
+    "@tailwindcss/postcss": "^4.2.4",
+    "react-dom": "^19.2.5",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^7.14.2",
+    "tailwindcss": "^4.2.4"
+  }
+}
