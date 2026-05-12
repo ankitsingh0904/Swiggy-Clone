@@ -1,4 +1,5 @@
-import RestaurantCard from "./RestaurantCard";
+import {RestaurantCard} from "./RestaurantCard";
+import {RestaurantCard2} from "./RestaurantCard";
 import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmer.js";
 import { Link } from "react-router";
@@ -6,6 +7,7 @@ import UserContext from "../utils/UserContext.js";
 //Body Component
 const Body = () => {
   const [Restaurantlist, setRestaurantlist] = useState([]);
+  const [Restaurantlist2, setRestaurantlist2] = useState([]);
   const [filterList, setfilterList] = useState([]);
   const [searchText, setsearchText] = useState("");
   const { loggedInUser, setuserName } = useContext(UserContext);
@@ -20,6 +22,9 @@ const Body = () => {
     setRestaurantlist(
       json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
     );
+     setRestaurantlist2(
+      json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
+    );
     setfilterList(
       json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
     );
@@ -33,7 +38,7 @@ const Body = () => {
         <div className="search flex my-2 w-full">
           <div className="search-bar">
             <input
-              className=" border border-solid border-black"
+              className=" border border-solid border-black text-center"
               id="search-box"
               type="text"
               placeholder="Search Here"
@@ -79,6 +84,13 @@ const Body = () => {
         </div>
         <div className="rest-container flex flex-wrap w-full my-0 mx-auto">
           {Restaurantlist.map((cards) => {
+            return (
+              <Link to={"/restaurant/" + cards.info.id} key={cards.info.id}>
+                <RestaurantCard resData={cards} />
+              </Link>
+            );
+          })}
+          {Restaurantlist2.map((cards) => {
             return (
               <Link to={"/restaurant/" + cards.info.id} key={cards.info.id}>
                 <RestaurantCard resData={cards} />

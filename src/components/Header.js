@@ -6,15 +6,16 @@ import { useSelector } from "react-redux";
 //Header Component
 const Header = () => {
   const [btnName, setbtnName] = useState("Login");
-  const [showInfo,setshowInfo] = useState(false);
-  const handledClick=()=>{if(showInfo===false){
-setshowInfo(true);
-  }
-else{
-  setshowInfo(false);
-}}
+  const [showInfo, setshowInfo] = useState(false);
+  const handledClick = () => {
+    if (showInfo === false) {
+      setshowInfo(true);
+    } else {
+      setshowInfo(false);
+    }
+  };
   const data = useContext(UserContext);
-  const cart=useSelector((store)=>store.cart.items);
+  const cart = useSelector((store) => store.cart.items);
   return (
     <div className="header flex justify-between items-center border border-solid border-black bg-pink-100 w-[98%] my-2 mx-auto shadow-2xl rounded-2xl text-xl">
       <div className="logo-container mx-3">
@@ -53,19 +54,21 @@ else{
             {btnName}
           </button>
         </ul>
-        
       </div>
-       <div className="mx-3 w-[10%]">
-              <div className="cursor-pointer flex flex-col w-[100%]" onClick={handledClick}>
-                <span className="px-18 ">🔽</span>
-                 <li className="list text-sm text-center" >
+      <div className="mx-3 w-[10%]">
+        <div
+          className="cursor-pointer flex flex-col w-[100%]"
+          onClick={handledClick}
+        >
+          <span className="px-18 ">🔽</span>
+          <li className="list text-sm text-center">
             <Link to="/">{showInfo && data.loggedInUser}</Link>
           </li>
           <li className="list text-center text-sm">
             <Link to="/">{showInfo && data.location}</Link>
           </li>
-                </div>
-          </div>
+        </div>
+      </div>
     </div>
   );
 };

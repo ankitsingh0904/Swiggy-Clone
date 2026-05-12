@@ -1,4 +1,4 @@
-4734
+4744
 110C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lightningcss\node_modules\detect-libc\lib\process.js134221895583350576 0
 67C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\commander134221895584355795 1
 88C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react\cjs\react.development.js134221896051899354 0
@@ -37,9 +37,9 @@
 78C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\rust\LICENSE134221895581966672 0
 69C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\postcss\lib134221898389537577 1
 104C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\devicepixelratio.js134221895591850128 0
-77C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\RestaurantCard.js134215314628246528 0
+77C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\RestaurantCard.js134230315069476022 0
 74C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\has-flag\license134221895582717547 0
-49C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist134221901792294960 1
+49C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist134230319848311870 1
 104C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\error-overlay\src\components\Header.js134221895584435764 0
 84C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-redux\src\components134221900679738081 1
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\regions\DO.js134221895591950191 0
@@ -49,12 +49,12 @@
 86C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\cache\lib\types.d.ts134221895584605759 0
 101C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\link-icon-svg.js134221895594957731 0
 92C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\source-map-js\lib\binary-search.js134221898387874903 0
-75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\GroceryItems.js134220398820184875 0
+75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\GroceryItems.js134230283763331985 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\workers\src\cpuCount.js134221895584665768 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\regions\JE.js134221895594296184 0
 74C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\semver\README.md134221895586736221 0
 97C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\packager-svg\src\SVGPackager.js134221895582627520 0
-77C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\RestaurantMenu.js134216995368976951 0
+77C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\RestaurantMenu.js134228672168362147 0
 75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-router\dist134221901651929656 1
 93C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\runtime-browser-hmr\LICENSE134221895581976624 0
 93C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@reduxjs\toolkit\query\package.json134221900679408079 0
@@ -142,10 +142,11 @@
 68C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\About.js134194468395108187 0
 94C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@reduxjs\toolkit\src\immerImports.ts134221900683433312 0
 72C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\node-addon-api134221895584745772 1
+75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.3a01df49.css134230315644883640 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\semver\ranges\max-satisfying.js134221895585241000 0
 83C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\utility-types\SECURITY.md134221895584485796 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\regions\AW.js134221895587151445 0
-67C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\Body.js134220417050256725 0
+67C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\Body.js134230315636565042 0
 92C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\tapable\lib\AsyncSeriesBailHook.js134221898387844907 0
 104C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\transformer-postcss\src\loadPlugins.js134221895583680562 0
 84C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\transformer-js\lib134221895582947622 1
@@ -186,7 +187,7 @@
 73C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\workers134221895587121442 1
 98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\use-sync-external-store\with-selector.js134221900679158121 0
 88C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-redux\src\utils\batch.ts134221900679328109 0
-69C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\Header.js134217055040237029 0
+69C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\Header.js134228675908214627 0
 71C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\src\components\ItemList.js134217652174152420 0
 79C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\msgpackr\unpack.d.cts134221895583980616 0
 82C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\postcss\lib\postcss.d.ts134221898389467586 0
@@ -1089,6 +1090,7 @@
 94C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\transformer-babel\lib\jsx.js134221895584505787 0
 85C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\supports-color\package.json134221895582727564 0
 98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\css-sticky.js134221895591160116 0
+73C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Grocery.390591cb.js.map134230315644773676 0
 87C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\regenerator-runtime\README.md134221895583027604 0
 82C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\supports-color\readme.md134221895582967620 0
 75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\source-map-js\lib134221898388285470 1
@@ -1167,7 +1169,7 @@
 96C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\watcher-win32-x64\package.json134221895582187527 0
 98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\events\test\ValueEmitter.test.js134221895584375787 0
 78C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react\jsx-runtime.js134221896051517897 0
-88C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1134221895581836592 1
+88C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1134221895581956643 1
 98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\types-internal\src\FileSystem.js134221895583640550 0
 86C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\events\src\errors.js134221895583440574 0
 86C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\semver\ranges\min-version.js134221895585341018 0
@@ -1524,7 +1526,7 @@
 97C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\packager-css\src\CSSPackager.js134221895582697546 0
 116C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-router\dist\production\instrumentation-g0dG8UL0.d.ts134221901654735002 0
 86C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\postcss\lib\stringifier.d.ts134221898389517565 0
-90C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-router\dist\production\lib134221901652542767 1
+90C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-router\dist\production\lib134221901652552703 1
 78C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\picocolors\README.md134221895582957591 0
 93C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\forms.js134221895592779550 0
 109C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-router\dist\production\register-DcBltf5q.d.ts134221901654785043 0
@@ -1801,6 +1803,7 @@
 119C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\package-manager\test\validateModuleSpecifiers.test.js134221895585351013 0
 106C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-dom\cjs\react-dom-test-utils.production.js134221896053086956 0
 99C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@swc\helpers\cjs\_non_iterable_spread.cjs134221895589616234 0
+74C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.62857f51.js134230319847976977 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lz4\lib\lz4.h134221895589126237 0
 109C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\react-dom\cjs\react-dom.react-server.development.js134221896053117008 0
 82C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\postcss\lib\comment.d.ts134221898389155458 0
@@ -2188,7 +2191,7 @@
 106C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\node_modules\node-addon-api\tools\README.md134221895584815765 0
 81C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dist\index.cjs.map134221895589796236 0
 77C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dict\dict2.txt134221895590046338 0
-80C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb134221895583180588 1
+80C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb134221895583220556 1
 108C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\intro.doc134221895588644105 0
 104C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\meta-theme-color.js134221895595392919 0
 79C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lz4134221895584745772 1
@@ -2223,7 +2226,7 @@
 98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lz4\lib\dll\liblz4.def134221895588574087 0
 91C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\core\test\fixtures\config134221895584000612 1
 105C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lz4\lib\dll\example\README.md134221895589826250 0
-98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1\libraries134221895581956643 1
+98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1\libraries134221895582036628 1
 106C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb134221895590147766 1
 103C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\enhanced-resolve\lib\JoinRequestPartPlugin.js134221898388665429 0
 116C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\COPYRIGHT134221895583017618 0
@@ -2275,7 +2278,7 @@
 74C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\cookie\README.md134221901651969654 0
 115C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\runtime-js\lib\helpers\browser\import-polyfill.js134221895585015846 0
 121C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\sample-mdb.txt134221895590157752 0
-90C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb\libraries134221895583220556 1
+90C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb\libraries134221895583270578 1
 98C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb134221895590177743 1
 108C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\chacha8.h134221895588724084 0
 107C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\crypto.c134221895586726210 0
@@ -2942,6 +2945,7 @@
 110C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\css-print-color-adjust.js134221895590957803 0
 99C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\css-regions.js134221895591007808 0
 111C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\css-repeating-gradients.js134221895591027824 0
+79C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.7d52d051.css.map134230319848288893 0
 104C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\css-revert-value.js134221895591060113 0
 99C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@reduxjs\toolkit\dist\uncheckedindexed.ts134221900684685314 0
 92C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\sdch.js134221895598116265 0
@@ -3028,7 +3032,7 @@
 105C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\input-file-accept.js134221895594071684 0
 121C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\core\test\fixtures\custom-format-infer-ext\package.json134221895590567749 0
 108C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\input-file-directory.js134221895594071684 0
-90C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\workers\test\integration134221895584045689 1
+90C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@parcel\workers\test\integration134221895584065774 1
 107C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\input-file-multiple.js134221895594081692 0
 94C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\@standard-schema\utils\dist\index.js134221900678976469 0
 103C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\caniuse-lite\data\features\input-inputmode.js134221895594091695 0
@@ -4729,7 +4733,13 @@
 69C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\.bin\semver134221895600629246 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\.bin\update-browserslist-db.cmd134221895600629246 0
 89C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\node_modules\.bin\update-browserslist-db.ps1134221895600629246 0
+69C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Grocery.390591cb.js134230315643622966 0
 73C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Grocery.7728202a.js.map134221901792274943 0
-60C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\index.html134221901792074941 0
+60C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\index.html134230319847967109 0
+74C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.2c54e4d8.js134230315645356034 0
+78C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.2c54e4d8.js.map134230315645475985 0
+79C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.3a01df49.css.map134230315644939875 0
+78C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.62857f51.js.map134230319848308887 0
 75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.66df4059.css134221901792114959 0
+75C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.7d52d051.css134230319847967109 0
 78C:\Users\ckitk\OneDrive\Desktop\Swiggy-Clone\dist\Swiggy-Clone.c49df75d.js.map134221901792294960 0

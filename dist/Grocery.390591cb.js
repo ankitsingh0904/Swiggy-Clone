@@ -967,7 +967,7 @@ const GroceryItems = (props)=>{
                     src: (0, _constantsJs.CDN_URL) + imageId
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 7,
+                    lineNumber: 8,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -975,19 +975,19 @@ const GroceryItems = (props)=>{
                     children: description
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 8,
-                    columnNumber: 8
+                    lineNumber: 9,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/GroceryItems.js",
-            lineNumber: 6,
-            columnNumber: 8
+            lineNumber: 7,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/GroceryItems.js",
-        lineNumber: 5,
-        columnNumber: 12
+        lineNumber: 6,
+        columnNumber: 5
     }, undefined);
 };
 _c = GroceryItems;
@@ -1003,7 +1003,7 @@ const GroceryItems1 = (props)=>{
                     src: (0, _constantsJs.CDN_URL) + imageId
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -1011,19 +1011,19 @@ const GroceryItems1 = (props)=>{
                     children: description
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 20,
-                    columnNumber: 8
+                    lineNumber: 21,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/GroceryItems.js",
-            lineNumber: 18,
-            columnNumber: 8
+            lineNumber: 19,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/GroceryItems.js",
-        lineNumber: 17,
-        columnNumber: 12
+        lineNumber: 18,
+        columnNumber: 5
     }, undefined);
 };
 _c1 = GroceryItems1;
@@ -1039,7 +1039,7 @@ const GroceryItems2 = (props)=>{
                     src: (0, _constantsJs.CDN_URL) + imageId
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 30,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -1047,19 +1047,19 @@ const GroceryItems2 = (props)=>{
                     children: description
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 31,
-                    columnNumber: 8
+                    lineNumber: 33,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/GroceryItems.js",
-            lineNumber: 29,
-            columnNumber: 8
+            lineNumber: 31,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/GroceryItems.js",
-        lineNumber: 28,
-        columnNumber: 12
+        lineNumber: 30,
+        columnNumber: 5
     }, undefined);
 };
 _c2 = GroceryItems2;
@@ -1075,7 +1075,7 @@ const GroceryItems3 = (props)=>{
                     src: (0, _constantsJs.CDN_URL) + imageId
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 41,
+                    lineNumber: 44,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -1083,19 +1083,19 @@ const GroceryItems3 = (props)=>{
                     children: description
                 }, void 0, false, {
                     fileName: "src/components/GroceryItems.js",
-                    lineNumber: 42,
-                    columnNumber: 8
+                    lineNumber: 45,
+                    columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/GroceryItems.js",
-            lineNumber: 40,
-            columnNumber: 8
+            lineNumber: 43,
+            columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/GroceryItems.js",
-        lineNumber: 39,
-        columnNumber: 12
+        lineNumber: 42,
+        columnNumber: 5
     }, undefined);
 };
 _c3 = GroceryItems3;
