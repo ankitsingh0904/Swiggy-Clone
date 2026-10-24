@@ -1,73 +1,55 @@
-import { LOGO_URL } from "../utils/constants.js";
-import { useState, useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router";
-import UserContext from "../utils/UserContext.js";
+import useonlineStatus from "../utils/useonlineStatus";
+import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
-//Header Component
+
 const Header = () => {
-  const [btnName, setbtnName] = useState("Login");
-  const [showInfo, setshowInfo] = useState(false);
-  const handledClick = () => {
-    if (showInfo === false) {
-      setshowInfo(true);
-    } else {
-      setshowInfo(false);
-    }
-  };
-  const data = useContext(UserContext);
-  const cart = useSelector((store) => store.cart.items);
+  const cartItems = useSelector(function (store) {
+    return store.cart.items;
+  });
+  const [log, setlog] = useState("Login");
+  const onlinestatus = useonlineStatus();
+  const userInfo = useContext(UserContext);
+  // console.log(userInfo);
   return (
-    <div className="header flex justify-between items-center border border-solid border-black bg-pink-100 w-[98%] my-2 mx-auto shadow-2xl rounded-2xl text-xl">
-      <div className="logo-container mx-3">
+    <div className="header">
+      <div className="res-logo">
         <Link to="/">
-          <img className="logo h-25 w-25" src={LOGO_URL}></img>
+          <img
+            className="logo"
+            src="https://t3.ftcdn.net/jpg/04/03/74/22/360_F_403742248_8DDzcFF4jw05lWqftk2yxzKRpFvpZ01Y.jpg"
+          ></img>
         </Link>
       </div>
       <div className="nav-items">
-        <ul className="nav-items flex justify-between">
-          <li className="list p-4 ">
-            <Link to="/">Home</Link>
+        <ul>
+          <li>Online Status:{onlinestatus ? "✅" : "🔴"}</li>
+          <Link to="/cart">
+            <li>Cart({cartItems.length})</li>
+          </Link>
+          <Link to="/about">
+            <li>About Us</li>
+          </Link>
+          <Link to="/grocery">
+            <li>Grocery</li>
+          </Link>
+          <li>
+            <p>{userInfo}</p>
+            <button
+              onClick={function () {
+                if (log === "Login") {
+                  setlog("Logout");
+                  console.log(log);
+                } else {
+                  setlog("Login");
+                }
+              }}
+            >
+              {log}
+            </button>
           </li>
-          <li className="list p-4 ">
-            <Link to="/about">About Us</Link>
-          </li>
-          <li className="list p-4 ">
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li className="list p-4 ">
-            <Link to="/cart">Cart ({cart.length})</Link>
-          </li>
-          <li className="list p-4 ">
-            <Link to="/grocery">Grocery</Link>
-          </li>
-
-          <button
-            className="btn-login mx-2 rounded-2xl bg-green-100 border border-solid border-black cursor-pointer"
-            onClick={() => {
-              if (btnName === "Login") {
-                setbtnName("Logout");
-              } else {
-                setbtnName("Login");
-              }
-            }}
-          >
-            {btnName}
-          </button>
         </ul>
-      </div>
-      <div className="mx-3 w-[10%]">
-        <div
-          className="cursor-pointer flex flex-col w-[100%]"
-          onClick={handledClick}
-        >
-          <span className="px-18 ">🔽</span>
-          <li className="list text-sm text-center">
-            <Link to="/">{showInfo && data.loggedInUser}</Link>
-          </li>
-          <li className="list text-center text-sm">
-            <Link to="/">{showInfo && data.location}</Link>
-          </li>
-        </div>
       </div>
     </div>
   );

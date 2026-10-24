@@ -1,16 +1,19 @@
-import {RestaurantCard} from "./RestaurantCard";
-import {RestaurantCard2} from "./RestaurantCard";
-import { useState, useEffect, useContext } from "react";
-import Shimmer from "./Shimmer.js";
+import RestaurantCards from "./RestaurantsCards";
+import { useEffect, useState } from "react";
+import useonlineStatus from "../utils/useonlineStatus";
+import Shimmer from "./Shimmer";
 import { Link } from "react-router";
-import UserContext from "../utils/UserContext.js";
-//Body Component
+import ExploreCuisines from "./ExploreCuisines";
 const Body = () => {
-  const [Restaurantlist, setRestaurantlist] = useState([]);
-  const [Restaurantlist2, setRestaurantlist2] = useState([]);
-  const [filterList, setfilterList] = useState([]);
-  const [searchText, setsearchText] = useState("");
-  const { loggedInUser, setuserName } = useContext(UserContext);
+  const [resList, setresList] = useState(null);
+  const [resList2, setresList2] = useState(null);
+  const [filtered, setfiltered] = useState(null);
+  const [curatedHeader, setcuratedHeader] = useState(null);
+  const [curatedRestaurants, setcuratedRestaurants] = useState(null);
+  const [bestCuisines, setbestCuisines] = useState(null);
+  const [searchtext, setsearchtext] = useState("");
+  const onlinestatus = useonlineStatus();
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -19,84 +22,110 @@ const Body = () => {
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.6168791&lng=88.4488677&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
     );
     const json = await data.json();
-    setRestaurantlist(
-      json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
+    setresList(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants,
     );
-     setRestaurantlist2(
-      json.data.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
+    setresList2(
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants,
     );
-    setfilterList(
-      json.data.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants,
+    setfiltered(
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants,
     );
-    console.log(json);
+    setcuratedHeader(json?.data?.cards[0]?.card?.card?.header?.title);
+    setcuratedRestaurants(
+      json?.data?.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info,
+    );
+    setbestCuisines(json?.data?.cards[7]);
   };
-  if (Restaurantlist.length === 0) {
+  if (onlinestatus === false) {
+    return <h1>You are offline</h1>;
+  }
+  if (resList === null) {
     return <Shimmer />;
   } else {
     return (
-      <div className="body w-[98%] my-0 mx-auto">
-        <div className="search flex my-2 w-full">
-          <div className="search-bar">
-            <input
-              className=" border border-solid border-black text-center"
-              id="search-box"
-              type="text"
-              placeholder="Search Here"
-              value={searchText}
-              onChange={(e) => setsearchText(e.target.value)}
-            ></input>
-          </div>
-          <div>
-            <button
-              className="search-btn bg-green-100 border border-solid border-black cursor-pointer mx-2"
-              onClick={() => {
-                const filteredlist2 = filterList.filter((res) =>
-                  res.info.name
-                    .toLowerCase()
-                    .includes(searchText.toLowerCase()),
-                );
-                setRestaurantlist(filteredlist2);
-              }}
-            >
-              Search
-            </button>
-          </div>
-          <div>
-            <button
-              className="filter-btn  bg-green-100 border border-solid border-black cursor-pointer mx-2"
-              onClick={() => {
-                const filteredlist = filterList.filter((rest) => {
-                  return rest.info.avgRating > 4.5;
-                });
-                console.log(filteredlist);
-                setRestaurantlist(filteredlist);
-              }}
-            >
-              Top Rated Restaurant
-            </button>
-            <input
-              className=" border border-solid border-black px-1"
-              placeholder="Enter Name"
-              value={loggedInUser}
-              onChange={(e) => setuserName(e.target.value)}
-            ></input>
-          </div>
+      <div className="body">
+        <div className="search">
+          <input
+            className="search-input"
+            type="text"
+            placeholder="Search Foods"
+            value={searchtext}
+            onChange={function (e) {
+              setsearchtext(e.target.value);
+            }}
+          ></input>
+          <button
+            className="search-btn"
+            onClick={function () {
+              const filteredRest = filtered.filter((searchRes) => {
+                return searchRes.info.name
+                  .toLowerCase()
+                  .includes(searchtext.toLowerCase());
+              });
+              {setresList(filteredRest),setresList2(filteredRest)};
+              setcuratedRestaurants(null);
+            }}
+          >
+            &#128269; Search
+          </button>
+          <button
+            className="filterbtn"
+            onClick={function () {
+              const filteredList = filtered.filter((list) => {
+                return list.info.avgRating > 4.3;
+              });
+              setresList(filteredList);
+            }}
+          >
+            Filter
+          </button>
         </div>
-        <div className="rest-container flex flex-wrap w-full my-0 mx-auto">
-          {Restaurantlist.map((cards) => {
+        <div className="curated-header">
+          <h4>{curatedHeader}</h4>
+        </div>
+
+        <div className="curated">
+          {curatedRestaurants?.map((items) => {
             return (
-              <Link to={"/restaurant/" + cards.info.id} key={cards.info.id}>
-                <RestaurantCard resData={cards} />
+              <Link key={items.id} to={items.action.link}>
+                <img
+                  src={
+                    "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/" +
+                    items?.imageId
+                  }
+                />
               </Link>
             );
           })}
-          {Restaurantlist2.map((cards) => {
+        </div>
+
+        <div className="res-container">
+          {resList?.map((cards) => {
             return (
-              <Link to={"/restaurant/" + cards.info.id} key={cards.info.id}>
-                <RestaurantCard resData={cards} />
+              <Link key={cards.info.id} to={"/restaurant/" + cards.info.id}>
+                <RestaurantCards data={cards} />
               </Link>
             );
           })}
+          {resList2?.map((cards) => {
+            return (
+              <Link key={cards.info.id} to={"/restaurant/" + cards.info.id}>
+                <RestaurantCards data={cards} />
+              </Link>
+            );
+          })}
+        </div>
+        <div className="best-cuisines">
+        <h4>{bestCuisines?.card?.card?.title}</h4>
+        <div className="best-cuisines-container">
+          {bestCuisines?.card?.card?.brands?.map((item,index)=>{
+            return <ExploreCuisines key={index} data={item}/>
+          })}
+        </div>
         </div>
       </div>
     );
