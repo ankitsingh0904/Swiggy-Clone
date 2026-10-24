@@ -1,40 +1,35 @@
-import React, { lazy, Suspense, useEffect } from "react";
-import { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header.js";
-import Body from "./components/Body.js";
-import AboutUs from "./components/About.js";
-import Contact from "./components/Contact.js";
-import Error from "./components/Error.js";
-import Cart from "./components/Cart.js";
-import RestaurantMenu from "./components/RestaurantMenu.js";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
-import UserContext from "./utils/UserContext.js";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import About from "./components/AboutUs";
+import Menu from "./components/Menu";
+import Cart from "./components/Cart";
+import Grocery from "./components/Grocery";
+import { lazy, Suspense } from "react";
+import UserContext from "./utils/UserContext";
+import { useContext } from "react";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 import { Provider } from "react-redux";
-import appStore from "./utils/appStore.js";
+import appStore from "./utils/appStore";
 
-const Grocery = lazy(() => import("./components/Grocery.js"));
+const Grocery = lazy(() => {
+  return import("./components/Grocery");
+});
+
 const AppLayout = () => {
-  const [userName, setuserName] = useState();
-  const [userLocation, setuserLocation] = useState();
-  useEffect(() => {
-    const userObj = {
-      name: "Ankit Singh",
-      city:"Kolkata"
-    };
-    setuserName(userObj.name);
-    setuserLocation(userObj.city)
-    
-  }, []);
+  let { loggedInUser } = useContext(UserContext);
+  console.log(loggedInUser);
 
   return (
     <Provider store={appStore}>
-    <UserContext.Provider value={{ loggedInUser: userName ,location:userLocation,setuserName}}>
-      <div className="app">
-        <Header />
-        <Outlet />
-      </div>
-    </UserContext.Provider></Provider>
+      <UserContext.Provider value={loggedInUser}>
+        <div className="app">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 const appRouter = createBrowserRouter([
@@ -42,14 +37,22 @@ const appRouter = createBrowserRouter([
     path: "/",
     element: <AppLayout />,
     children: [
-      {
-        path: "/",
-        element: <Body />,
-      },
+      { path: "/", element: <Body /> },
+
       {
         path: "/about",
-        element: <AboutUs />,
+        element: <About />,
       },
+      {
+        path: "/restaurant/:resId",
+        element: <Menu />,
+      },
+
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+
       {
         path: "/grocery",
         element: (
@@ -58,20 +61,7 @@ const appRouter = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/cart",
-        element: <Cart />,
-      },
-      {
-        path: "/restaurant/:resId",
-        element: <RestaurantMenu />,
-      },
     ],
-    errorElement: <Error />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
