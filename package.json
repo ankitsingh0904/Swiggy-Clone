@@ -1,36 +1,25 @@
 {
-  "name": "swiggy-clone",
+  "name": "SWIGGY CLONE",
   "version": "1.0.0",
-  "description": "Swiggy Clone By Ankit",
+  "description": "",
   "keywords": [
-    "Ankit"
+    "eatsure"
   ],
-  "homepage": "https://github.com/ankitsingh0904/Swiggy-Clone#readme",
-  "bugs": {
-    "url": "https://github.com/ankitsingh0904/Swiggy-Clone/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ankitsingh0904/Swiggy-Clone.git"
-  },
   "license": "ISC",
-  "author": "Ankit",
+  "author": "eatsure",
   "type": "commonjs",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
-  },
-  "devDependencies": {
-    "parcel": "^2.16.4",
-    "react": "^19.2.5"
+    "build": "parcel index.html"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.11.2",
-    "@tailwindcss/postcss": "^4.2.4",
-    "react-dom": "^19.2.5",
-    "react-redux": "^9.2.0",
-    "react-router-dom": "^7.14.2",
-    "tailwindcss": "^4.2.4"
+    "@reduxjs/toolkit": "^2.13.0",
+    "parcel": "^2.16.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-redux": "^9.3.0",
+    "react-router": "^7.18.4",
+    "react-router-dom": "^7.18.4"
   }
 }
